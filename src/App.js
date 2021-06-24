@@ -4,6 +4,14 @@ import './App.css';
 import IdCard from './IdCard';
 import Greetings from './Greetings';
 import Random from './Random';
+import BoxColor from './BoxColor';
+import CreditCard from './CreditCard';
+// import Rating from './Rating';]
+import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
+import Dice from './Dice';
+import NumbersTable from './NumbersTable';
+import SignUp from './SignUp';
 
 function App() {
   return (
@@ -66,13 +74,22 @@ function App() {
         bgColor="#ddbb55"
         color="white" />
 
-      <Rating>0</Rating>
+      {/* <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
-      <Rating>5</Rating>
+      <Rating>5</Rating> */}
 
+      {/* INCLUI A DIV PARA CONSEGUIR ARRUMAR O CSS */}
+      
+      <LikeButton /> 
+      <LikeButton />
+      
+      <ClickablePicture img='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png'/>
+      <Dice />
+      <NumbersTable limit={12} />
+      <SignUp />
       </header>
     </div>
   );

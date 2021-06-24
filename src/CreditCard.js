@@ -20,15 +20,15 @@ function CreditCard(props){
                 <div
                 className="Felipe_Vai_Escolher_Tambem"
                     // eslint-disable-next-line 
-                style= "backgroundColor"{props.bgColor}
+                // style= "backgroundColor"{props.bgColor}
                 >
                     <font color= {props.color}>
-                        <p>'props.type'</p>
+                        <p>{props.type}</p>
                         <h3 className="card-title">{numberProtection}</h3>
                         <p>{props.expirationMonth}</p> 
                         <p>{props.expirationYear}</p>
-                        <p>'props.bank'</p>
-                        <p>'props.owner'</p>
+                        <p>{props.bank}</p>
+                        <p>{props.owner}</p>
                     </font>
                 </div>
             </div>

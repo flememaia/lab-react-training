@@ -1,9 +1,10 @@
 function BoxColor(props){
 
+
     function rgbToHex() {
 
 
-        let hexa =  "#" + ((1 << 24) + ({props.r} << 16) + ({props.g} << 8) + {props.b}).toString(16).slice(1);
+        let hexa =  "#" + ((1 << 24) + (props.r << 16) + (props.g << 8) + props.b).toString(16).slice(1);
 
         return hexa;
     }
@@ -11,7 +12,7 @@ function BoxColor(props){
     return (
         <div>
             <p>`rgb({props.r}, {props.g}, {props.b})`</p>
-            <p>{hexa}</p>
+            <p>{rgbToHex}</p>
         </div>
     )
 }
